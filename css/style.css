@@ -12,7 +12,9 @@ html{
 }
 .sodLeft{
   background-color: #f6f3f3;
-  height:100%;
+  /*FIXME: Setting height is layout breaking
+   - leave as auto to conform to content*/
+  /*height:100%;*/
   padding-left: 40px;
   padding-right: 40px;
 }
