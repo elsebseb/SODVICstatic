@@ -242,6 +242,7 @@ to distringuish between page breadcrumbs*/
   letter-spacing: 2px;
   color: #58595B;
 }
+/*Slick carousel images*/
 .sodHeroImage{
   height: 500px;
   background-repeat: no-repeat;
@@ -266,6 +267,39 @@ to distringuish between page breadcrumbs*/
 .slick-list{
   border-radius: 10px;
 }
+/*Project information*/
+.sodProjectInfo{
+  margin-top: 20px;
+}
+.sodProjectTitle{
+  text-transform: uppercase;
+}
+.sodProjectAuthor{
+  color: #6D6E71;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+.sodProjectInfoSection, .sodProjectFieldTitle, .sodProjectFieldInfo{
+  display: inline-block;
+}
+.sodProjectInfoSection{
+  padding: 0 40px;
+}
+.sodProjectFieldTitle{
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.sodProjectTags{
+  margin-left: 0px;
+  line-height: 1;
+}
+.sodProjectTags li{
+  list-style: none;
+  display: inline;
+  font-size: 0.8rem;
+  line-height: 0.5rem;
+}
+
 
 /* MEDIA QUERIES */
 /* Small only */
