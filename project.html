@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOD</title>
     <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/slick/slick.css">
+    <link rel="stylesheet" href="css/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/foundation-icons.css" />
   </head>
@@ -64,7 +66,29 @@
         <!-- MAIN CONTENT -->
         <div class="row sodMain">
 
-          
+          <!-- Top of page breadcrumbs -->
+          <ul class="sodPageBreadcrumbs">
+            <li><a href="#">Home</a> |</li>
+            <li><a href="#">SoD Majors</a> |</li>
+            <li><a href="#">Media Design</a> |</li>
+            <li><a href="#">Project</a></li>
+          </ul>
+
+          <!-- Slick carousel -->
+
+          <div class="sodHeroCarousel">
+            <div class="sodHeroImage" style="background-image: url('img/sample1.png');">
+            </div>
+            <div class="sodHeroImage" style="background-image: url('img/sample2.jpg');">
+            </div>
+            <div class="sodHeroImage" style="background-image: url('img/sample3.jpg');">
+            </div>
+            <div class="sodHeroImage" style="background-image: url('img/sample4.jpg');">
+            </div>
+          </div>
+
+          <!-- Slick carousel ends -->
+
         </div>
         <!-- MAIN ENDS -->
       </div>
@@ -72,9 +96,18 @@
     </div> -->
     <!-- wrapper ends -->
 
-
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/slick.min.js"></script>
+    <script type="text/javascript">
+      $('.sodHeroCarousel').slick({
+        autoplay: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+    </script>
   </body>
 </html>

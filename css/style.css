@@ -14,7 +14,7 @@ html{
   background-color: #f6f3f3;
   /*FIXME: Setting height is layout breaking
    - leave as auto to conform to content*/
-  /*height:100%;*/
+  height:100%;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -98,6 +98,8 @@ h4{
   text-align: left;
   font-size: 22px;
 }
+/*FIXME: this class should be renamed sodFilterBreadcrumbs
+to distringuish between page breadcrumbs*/
 .sodBreadcrumbs{
   padding-top: 30px;
   padding-bottom: 30px;
@@ -228,6 +230,44 @@ h4{
 .indTxt{color:#dc6442;}
 .ccTxt{color:#40c6c7;}
 .pgTxt{color:#90278e;}
+
+
+/* PROJECT PAGE */
+.sodPageBreadcrumbs{
+  list-style: none;
+}
+.sodPageBreadcrumbs li, .sodPageBreadcrumbs a{
+  display: inline;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #58595B;
+}
+.sodHeroImage{
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/*Slick carousel overrides*/
+.slick-prev, .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+.slick-prev::before, .slick-next::before {
+  font-size: 30px;
+}
+.slick-prev{
+  left: 0px;
+}
+.slick-next {
+  right: 0px;
+}
+.slick-list{
+  border-radius: 10px;
+}
+
+/* MEDIA QUERIES */
 /* Small only */
 @media screen and (max-width: 39.9375em) {
 
