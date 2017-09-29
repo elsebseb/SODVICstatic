@@ -283,19 +283,20 @@ to distringuish between page breadcrumbs*/
   font-weight: bold;
   min-width: 100px;
   margin-bottom: 5px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 }
 .sodProjectFieldInfo a, .sodProjectFieldInfo ul li a{
   color: #FF697B;
->>>>>>> 5a46bf08f93cd0d2e0f0ff2ad4ce7563f510adab
-=======
 }
 .sodProjectFieldInfo a, .sodProjectFieldInfo ul li a{
   color: #FF697B;
->>>>>>> 5a46bf08f93cd0d2e0f0ff2ad4ce7563f510adab
+  font-size: 14px;
 }
+ul.sodProjectFieldInfo{
+  list-style: none;
+  margin-left: 0px;
+}
+
+
 .sodProjectTags{
   margin-left: 0px;
   line-height: 1;
@@ -396,6 +397,7 @@ div.sodRelatedProject{
   margin-right: 45px;
 
 }
+
 /* MEDIA QUERIES */
 /* Small only */
 @media screen and (max-width: 39.9375em) {
