@@ -1,3 +1,4 @@
+/*  GLOBALS */
 body{
   height:100%;
   width:100%;
@@ -7,12 +8,16 @@ html{
   height: 100%;
   width:100%;
 }
+p{
+  color: #4A4A4A;
+  font-size: 14px;
+}
 
 .row{
   max-width: 100%;
 }
 .sodLeft{
-  background-color: #f6f3f3;
+  background-color: #F6F4F4;
   /*FIXME: Setting height is layout breaking
    - leave as auto to conform to content*/
   /*height:100%;*/
@@ -259,6 +264,8 @@ to distringuish between page breadcrumbs*/
 }
 .sodProjectTitle{
   text-transform: uppercase;
+  text-align: center;
+  color: #D91C5C;
 }
 .sodProjectAuthor{
   color: #6D6E71;
@@ -275,6 +282,9 @@ to distringuish between page breadcrumbs*/
   font-weight: bold;
   min-width: 100px;
   margin-bottom: 5px;
+}
+.sodProjectFieldInfo a, .sodProjectFieldInfo ul li a{
+  color: #FF697B;
 }
 .sodProjectTags{
   margin-left: 0px;
@@ -296,7 +306,9 @@ to distringuish between page breadcrumbs*/
 /*Related project container*/
 .sodRelatedProjects{
   text-align: center;
-  padding: 0 10px;
+  padding: 15px;
+  background-color: #F7F8F9;
+  border-radius: 10px;
 }
 .sodRelatedProjects h3{
   font-size: 1rem;
@@ -308,6 +320,14 @@ to distringuish between page breadcrumbs*/
 .sodRelatedStudent{
   margin-top: 20px;
 }
+.sodRelatedStudent p{
+  margin-bottom: 5px;
+}
+.sodRelatedStudent a{
+  color: #4A4A4A;
+  font-weight: bold;
+}
+
 /*Related singular project*/
 div.sodRelatedProject{
   height: 200px;
