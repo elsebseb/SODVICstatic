@@ -286,6 +286,12 @@ to distringuish between page breadcrumbs*/
   min-width: 100px;
   margin-bottom: 5px;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+}
+.sodProjectFieldInfo a, .sodProjectFieldInfo ul li a{
+  color: #FF697B;
+>>>>>>> 5a46bf08f93cd0d2e0f0ff2ad4ce7563f510adab
 =======
 }
 .sodProjectFieldInfo a, .sodProjectFieldInfo ul li a{
