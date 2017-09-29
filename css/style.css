@@ -14,7 +14,7 @@ html{
   background-color: #f6f3f3;
   /*FIXME: Setting height is layout breaking
    - leave as auto to conform to content*/
-  height:100%;
+  /*height:100%;*/
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -233,6 +233,9 @@ to distringuish between page breadcrumbs*/
 
 
 /* PROJECT PAGE */
+.sodMainProject, .sodProjectSidebar{
+  display: inline-block;
+}
 .sodPageBreadcrumbs{
   list-style: none;
 }
@@ -299,7 +302,36 @@ to distringuish between page breadcrumbs*/
   font-size: 0.8rem;
   line-height: 0.5rem;
 }
-
+/*Project sidebar*/
+.sodSidebar{
+  padding-left: 30px;
+}
+.sodSidebar h2{
+  text-transform: uppercase;
+}
+/*Related project container*/
+.sodRelatedProjects{
+  text-align: center;
+  padding: 0 10px;
+}
+.sodRelatedProjects h3{
+  font-size: 1rem;
+  color: #6D6E71;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.sodRelatedStudent{
+  margin-top: 20px;
+}
+/*Related singular project*/
+div.sodRelatedProject{
+  height: 200px;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* MEDIA QUERIES */
 /* Small only */

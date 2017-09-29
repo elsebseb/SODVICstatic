@@ -61,10 +61,11 @@
         <!-- SOD MENU ENDS -->
       </div>
       <!-- RIGHT COLUMN EXTENDED -->
-      <div class="sodRight columns">
+      <!-- NOTE: remove 'columns' class from here or foundation structure breaks -->
+      <div class="sodRight row">
 
         <!-- MAIN CONTENT -->
-        <div class="row sodMain">
+        <div class="row sodMain sodMainProject large-8 columns">
 
           <!-- Top of page breadcrumbs -->
           <ul class="sodPageBreadcrumbs">
@@ -103,6 +104,7 @@
                   <p class="sodProjectFieldInfo medium-9 columns">Pinokio is an exploration into the expressive and behavioural potentials of robotic computing. Customized computer code and electronic circuit design imbues Pinokio with the ability to be aware of its environment, especially people, and to expresses a dynamic range of behaviour. Pinokio is an exploration into the expressive and behavioural potentials of robotic computing. Customized computer code and electronic circuit design imbues Pinokio with the ability to be aware of its environment, especially people, and to expresses a dynamic range of behaviour....</p>
                 </div>
               </div>
+              <!-- Project metadata and external link section -->
               <div class="sodProjectInfoSection medium-4 columns">
                 <p class="sodProjectFieldTitle">Project Links</p>
                 <ul>
@@ -126,6 +128,32 @@
 
         </div>
         <!-- MAIN ENDS -->
+
+        <!-- SIDEBAR CONTENT -->
+        <aside class="sodSidebar large-4 columns">
+          <h2 class="text-center">Project</h2>
+          <p class="text-center">Student work produced at VUW School of Design</p>
+          <hr>
+          <!-- Related project container -->
+          <section class="sodRelatedProjects">
+            <img src="img/SoD_Icons_NoBg/SoD_MediaIcon_NoBg.svg" alt="">
+            <h3>Related Projects</h3>
+            <!-- Work belonging to a relevant single student -->
+            <div class="sodRelatedStudent">
+              <p>More from <a href="#">Adam Ben-Dror</a></p>
+              <div class="sodRelatedProject" style="background-image: url('img/sample1.png');">
+              </div>
+            </div>
+            <div class="sodRelatedStudent">
+              <p>More from <a href="#">Shanshan Zhou</a></p>
+              <div class="sodRelatedProject" style="background-image: url('img/sample2.jpg');">
+              </div>
+            </div>
+          </section>
+
+        </aside>
+        <!-- SIDEBAR ENDS -->
+
       </div>
 <!--
     </div> -->
