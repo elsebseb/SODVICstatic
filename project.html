@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOD</title>
     <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/slick/slick.css">
-    <link rel="stylesheet" href="css/slick/slick-theme.css">
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/foundation-icons.css" />
   </head>
@@ -75,23 +74,27 @@
             <li><a href="#">Project</a></li>
           </ul>
 
-          <!-- Slick carousel -->
+          <!-- Fotorama carousel -->
           <!-- TODO: add accessibility offscreen text -->
-          <div class="sodHeroCarousel">
-            <div class="sodHeroImage" style="background-image: url('img/sample1.png');">
+            <div class="fotorama" data-fit="cover" data-nav="thumbs"  data-navwidth="100%" data-thumbmargin="10" data-thumbwidth="80px" data-thumbheight="80px">
+              <img src="img/sample1.png">
+              <img src="img/sample2.jpg">
+              <img src="img/sample3.jpg">
+              <img src="img/sample4.jpg">
+              <img src="img/sample1.png">
+              <img src="img/sample2.jpg">
+              <img src="img/sample3.jpg">
+              <img src="img/sample4.jpg">
+              <img src="img/sample1.png">
+              <img src="img/sample2.jpg">
+              <img src="img/sample3.jpg">
+              <img src="img/sample4.jpg">
             </div>
-            <div class="sodHeroImage" style="background-image: url('img/sample2.jpg');">
-            </div>
-            <div class="sodHeroImage" style="background-image: url('img/sample3.jpg');">
-            </div>
-            <div class="sodHeroImage" style="background-image: url('img/sample4.jpg');">
-            </div>
-          </div>
-          <!-- Slick carousel ends -->
+          <!-- Fotorama carousel ends -->
 
           <!-- Main project information container -->
           <section class="sodProjectInfo small-centered">
-              <h2 class="sodProjectTitle text-center">Project Title</h2>
+              <h2 class="sodProjectTitle">Project Title</h2>
               <hr>
               <p class="sodProjectAuthor text-center">Author 1 &amp; Author 2</p>
               <div class="sodProjectInfoSection medium-8 columns">
@@ -99,7 +102,7 @@
                   <p class="sodProjectFieldTitle medium-3 columns">Lecturer</p>
                   <p class="sodProjectFieldInfo medium-9 columns">Walter Langelaar</p>
                   <p class="sodProjectFieldTitle medium-3 columns">Course</p>
-                  <p class="sodProjectFieldInfo medium-9 columns">Physical Computing (MDDN 251)</p>
+                  <p class="sodProjectFieldInfo medium-9 columns"><a href="#">Physical Computing (MDDN 251)</a></p>
                   <p class="sodProjectFieldTitle medium-3 columns">Overview</p>
                   <p class="sodProjectFieldInfo medium-12 columns">Pinokio is an exploration into the expressive and behavioural potentials of robotic computing. Customized computer code and electronic circuit design imbues Pinokio with the ability to be aware of its environment, especially people, and to expresses a dynamic range of behaviour. Pinokio is an exploration into the expressive and behavioural potentials of robotic computing. Customized computer code and electronic circuit design imbues Pinokio with the ability to be aware of its environment, especially people, and to expresses a dynamic range of behaviour....</p>
                 </div>
@@ -107,7 +110,7 @@
               <!-- Project metadata and external link section -->
               <div class="sodProjectInfoSection medium-4 columns">
                 <p class="sodProjectFieldTitle">Project Links</p>
-                <ul>
+                <ul class="sodProjectFieldInfo">
                     <li><a href="#">Behance Page</a></li>
                     <li><a href="#">Project Website</a></li>
                 </ul>
@@ -163,15 +166,6 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
-    <script src="js/vendor/slick.min.js"></script>
-    <script type="text/javascript">
-      $('.sodHeroCarousel').slick({
-        autoplay: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-      });
-    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
   </body>
 </html>

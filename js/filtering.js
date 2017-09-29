@@ -304,6 +304,8 @@ $( ".reset" ).click(function() {
   $("#industrial_img").attr('src', '\img/SoD_IndustrialIcon_Inactive_Optimised.svg');
   $("#cc_img").attr('src', '\img/SoD_CultureContextIcon_Inactive_Optimised.svg');
   $("#postgrad_img").attr('src', '\img/SoD_PostGradIcon_Inactive_Optimised.svg');
+  $( "#breadcrumbs" ).empty();
+  $( "#breadcrumbs" ).append( "All Departments" );
   $('.grid').isotope({ filter: '*' });
 });
 /**

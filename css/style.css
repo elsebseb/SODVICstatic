@@ -1,17 +1,23 @@
+/*  GLOBALS */
 body{
   height:100%;
   width:100%;
+  background-image: radial-gradient(50% 150%, #FFFFFF 50%, #f0e8e8 100%);
 }
 html{
   height: 100%;
   width:100%;
+}
+p{
+  color: #4A4A4A;
+  font-size: 14px;
 }
 
 .row{
   max-width: 100%;
 }
 .sodLeft{
-  background-color: #f6f3f3;
+  background-color: #F6F4F4;
   /*FIXME: Setting height is layout breaking
    - leave as auto to conform to content*/
   /*height:100%;*/
@@ -23,6 +29,9 @@ html{
   padding-right: 40px;
   padding-top: 50px;
   height: 100%;
+}
+.bgsod{
+  background-color:#ebe6e6;
 }
 h1{
 }
@@ -238,6 +247,7 @@ to distringuish between page breadcrumbs*/
 }
 .sodPageBreadcrumbs{
   list-style: none;
+  margin-bottom: 40px;
 }
 .sodPageBreadcrumbs li, .sodPageBreadcrumbs a{
   display: inline;
@@ -245,37 +255,20 @@ to distringuish between page breadcrumbs*/
   letter-spacing: 2px;
   color: #58595B;
 }
-/*Slick carousel images*/
-.sodHeroImage{
-  height: 500px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-/*Slick carousel overrides*/
-.slick-prev, .slick-next {
-  width: 40px;
-  height: 40px;
-  z-index: 1;
-}
-.slick-prev::before, .slick-next::before {
-  font-size: 30px;
-}
-.slick-prev{
-  left: 0px;
-}
-.slick-next {
-  right: 0px;
-}
-.slick-list{
+
+/*Fotorama carousel overrides*/
+.fotorama__stage{
   border-radius: 10px;
 }
+
 /*Project information*/
 .sodProjectInfo{
   margin-top: 20px;
 }
 .sodProjectTitle{
   text-transform: uppercase;
+  text-align: center;
+  color: #D91C5C;
 }
 .sodProjectAuthor{
   color: #6D6E71;
@@ -291,7 +284,13 @@ to distringuish between page breadcrumbs*/
 .sodProjectFieldTitle{
   font-weight: bold;
   min-width: 100px;
-  margin-bottom: 5px;  
+  margin-bottom: 5px;
+<<<<<<< HEAD
+=======
+}
+.sodProjectFieldInfo a, .sodProjectFieldInfo ul li a{
+  color: #FF697B;
+>>>>>>> 5a46bf08f93cd0d2e0f0ff2ad4ce7563f510adab
 }
 .sodProjectTags{
   margin-left: 0px;
@@ -313,7 +312,9 @@ to distringuish between page breadcrumbs*/
 /*Related project container*/
 .sodRelatedProjects{
   text-align: center;
-  padding: 0 10px;
+  padding: 15px;
+  background-color: #F7F8F9;
+  border-radius: 10px;
 }
 .sodRelatedProjects h3{
   font-size: 1rem;
@@ -325,6 +326,14 @@ to distringuish between page breadcrumbs*/
 .sodRelatedStudent{
   margin-top: 20px;
 }
+.sodRelatedStudent p{
+  margin-bottom: 5px;
+}
+.sodRelatedStudent a{
+  color: #4A4A4A;
+  font-weight: bold;
+}
+
 /*Related singular project*/
 div.sodRelatedProject{
   height: 200px;
