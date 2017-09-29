@@ -290,7 +290,8 @@ to distringuish between page breadcrumbs*/
 }
 .sodProjectFieldTitle{
   font-weight: bold;
-  margin-bottom: 5px;
+  min-width: 100px;
+  margin-bottom: 5px;  
 }
 .sodProjectTags{
   margin-left: 0px;
