@@ -239,8 +239,21 @@ to distringuish between page breadcrumbs*/
 .pgTxt{color:#90278e;}
 
 
+/* Seb REVIEW: Flexbox for RWD */
+.sodRight{
+  display: flex;
+  flex-wrap: wrap;
+}
+.sodMain{
+  flex-grow: 1;
+}
+.sodSidebar{
+  flex-grow: 1;
+  min-width: 350px;
+}
+
 /* PROJECT PAGE */
-.sodMainProject, .sodProjectSidebar{
+.sodMainProject{
   display: inline-block;
 }
 .sodPageBreadcrumbs{
