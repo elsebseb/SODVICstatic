@@ -1,6 +1,7 @@
 body{
   height:100%;
   width:100%;
+  background-image: radial-gradient(50% 150%, #FFFFFF 50%, #f0e8e8 100%);
 }
 html{
   height: 100%;
@@ -238,6 +239,7 @@ to distringuish between page breadcrumbs*/
 }
 .sodPageBreadcrumbs{
   list-style: none;
+  margin-bottom: 40px;
 }
 .sodPageBreadcrumbs li, .sodPageBreadcrumbs a{
   display: inline;
@@ -245,31 +247,9 @@ to distringuish between page breadcrumbs*/
   letter-spacing: 2px;
   color: #58595B;
 }
-/*Slick carousel images*/
-.sodHeroImage{
-  height: 500px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-/*Slick carousel overrides*/
-.slick-prev, .slick-next {
-  width: 40px;
-  height: 40px;
-  z-index: 1;
-}
-.slick-prev::before, .slick-next::before {
-  font-size: 30px;
-}
-.slick-prev{
-  left: 0px;
-}
-.slick-next {
-  right: 0px;
-}
-.slick-list{
-  border-radius: 10px;
-}
+/*Lightslider overrides*/
+
+
 /*Project information*/
 .sodProjectInfo{
   margin-top: 20px;
@@ -291,7 +271,7 @@ to distringuish between page breadcrumbs*/
 .sodProjectFieldTitle{
   font-weight: bold;
   min-width: 100px;
-  margin-bottom: 5px;  
+  margin-bottom: 5px;
 }
 .sodProjectTags{
   margin-left: 0px;

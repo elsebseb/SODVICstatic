@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOD</title>
     <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/slick/slick.css">
-    <link rel="stylesheet" href="css/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/lightslider/lightslider.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/foundation-icons.css" />
   </head>
@@ -77,16 +76,20 @@
 
           <!-- Slick carousel -->
           <!-- TODO: add accessibility offscreen text -->
-          <div class="sodHeroCarousel">
-            <div class="sodHeroImage" style="background-image: url('img/sample1.png');">
-            </div>
-            <div class="sodHeroImage" style="background-image: url('img/sample2.jpg');">
-            </div>
-            <div class="sodHeroImage" style="background-image: url('img/sample3.jpg');">
-            </div>
-            <div class="sodHeroImage" style="background-image: url('img/sample4.jpg');">
-            </div>
-          </div>
+            <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                <li data-thumb="img/sample1.png">
+                  <img class="sliderImg" src="img/sample1.png" />
+                </li>
+                <li data-thumb="img/sample2.jpg">
+                  <img class="sliderImg" src="img/sample2.jpg" />
+                </li>
+                <li data-thumb="img/sample3.jpg">
+                  <img class="sliderImg" src="img/sample3.jpg" />
+                </li>
+                <li data-thumb="img/sample4.jpg">
+                  <img class="sliderImg" src="img/sample4.jpg" />
+                </li>
+            </ul>
           <!-- Slick carousel ends -->
 
           <!-- Main project information container -->
@@ -163,14 +166,26 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
-    <script src="js/vendor/slick.min.js"></script>
+    <script src="js/vendor/lightslider.js"></script>
     <script type="text/javascript">
-      $('.sodHeroCarousel').slick({
-        autoplay: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
+      $(document).ready(function() {
+        $("#content-slider").lightSlider({
+                  loop:true,
+                  keyPress:true
+              });
+              $('#image-gallery').lightSlider({
+                  gallery:true,
+                  autoWidth:false,
+                  item:1,
+                  thumbItem:4,
+                  slideMargin: 0,
+                  speed:500,
+                  // auto:true,
+                  loop:true,
+                  onSliderLoad: function() {
+                      $('#image-gallery').removeClass('cS-hidden');
+                  }
+              });
       });
     </script>
   </body>
