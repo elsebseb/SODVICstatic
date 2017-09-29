@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOD</title>
     <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/lightslider/lightslider.css">
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/foundation-icons.css" />
   </head>
@@ -74,23 +74,23 @@
             <li><a href="#">Project</a></li>
           </ul>
 
-          <!-- Slick carousel -->
+          <!-- Fotorama carousel -->
           <!-- TODO: add accessibility offscreen text -->
-            <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-                <li data-thumb="img/sample1.png">
-                  <img class="sliderImg" src="img/sample1.png" />
-                </li>
-                <li data-thumb="img/sample2.jpg">
-                  <img class="sliderImg" src="img/sample2.jpg" />
-                </li>
-                <li data-thumb="img/sample3.jpg">
-                  <img class="sliderImg" src="img/sample3.jpg" />
-                </li>
-                <li data-thumb="img/sample4.jpg">
-                  <img class="sliderImg" src="img/sample4.jpg" />
-                </li>
-            </ul>
-          <!-- Slick carousel ends -->
+            <div class="fotorama" data-fit="cover" data-nav="thumbs"  data-navwidth="100%" data-thumbmargin="10" data-thumbwidth="80px" data-thumbheight="80px">
+              <img src="img/sample1.png">
+              <img src="img/sample2.jpg">
+              <img src="img/sample3.jpg">
+              <img src="img/sample4.jpg">
+              <img src="img/sample1.png">
+              <img src="img/sample2.jpg">
+              <img src="img/sample3.jpg">
+              <img src="img/sample4.jpg">
+              <img src="img/sample1.png">
+              <img src="img/sample2.jpg">
+              <img src="img/sample3.jpg">
+              <img src="img/sample4.jpg">
+            </div>
+          <!-- Fotorama carousel ends -->
 
           <!-- Main project information container -->
           <section class="sodProjectInfo small-centered">
@@ -166,27 +166,6 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
-    <script src="js/vendor/lightslider.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $("#content-slider").lightSlider({
-                  loop:true,
-                  keyPress:true
-              });
-              $('#image-gallery').lightSlider({
-                  gallery:true,
-                  autoWidth:false,
-                  item:1,
-                  thumbItem:4,
-                  slideMargin: 0,
-                  speed:500,
-                  // auto:true,
-                  loop:true,
-                  onSliderLoad: function() {
-                      $('#image-gallery').removeClass('cS-hidden');
-                  }
-              });
-      });
-    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
   </body>
 </html>

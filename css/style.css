@@ -247,8 +247,11 @@ to distringuish between page breadcrumbs*/
   letter-spacing: 2px;
   color: #58595B;
 }
-/*Lightslider overrides*/
 
+/*Fotorama carousel overrides*/
+.fotorama__stage{
+  border-radius: 10px;
+}
 
 /*Project information*/
 .sodProjectInfo{
