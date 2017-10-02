@@ -8,6 +8,28 @@ html{
   height: 100%;
   width:100%;
 }
+h1{
+  font-size: 2rem;
+  font-family:  'Open Sans', sans-serif;
+  letter-spacing: 4px;
+}
+h2{
+  font-family:  'Open Sans', sans-serif;
+  color: #58595B;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+h3, h4{
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: #6D6E71;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+h4{
+
+}
 p{
   color: #4A4A4A;
   font-size: 14px;
@@ -29,20 +51,6 @@ p{
   padding-right: 40px;
   padding-top: 50px;
   height: 100%;
-}
-
-h1{
-}
-h2{
-  font-size: 24px;
-  letter-spacing: 1.5px;
-
-}
-h3{
-
-}
-h4{
-
 }
 .sodLogo{
   padding-top: 20px;
@@ -68,6 +76,7 @@ h4{
 }
 /* sod menu*/
 .vertical.menu{
+  margin-top: 10px;
   background-color: #f6f3f3;
   letter-spacing: 1.5px;
 }
@@ -240,7 +249,7 @@ to distringuish between page breadcrumbs*/
 
 
 /* Seb REVIEW: Flexbox for RWD */
-.sodRight{
+/*.sodRight{
   display: flex;
   flex-wrap: wrap;
 }
@@ -250,7 +259,7 @@ to distringuish between page breadcrumbs*/
 .sodSidebar{
   flex-grow: 1;
   min-width: 350px;
-}
+}*/
 
 /* PROJECT PAGE */
 .sodMainProject{
@@ -341,13 +350,13 @@ ul.sodProjectFieldInfo{
   text-transform: uppercase;
   margin-top: 10px;
 }
-.sodRelatedStudent{
+.sodRelatedStudent, .sodRelatedCourse{
   margin-top: 20px;
 }
-.sodRelatedStudent p{
+.sodRelatedStudent p, .sodRelatedCourse p{
   margin-bottom: 5px;
 }
-.sodRelatedStudent a{
+.sodRelatedStudent a, .sodRelatedCourse a{
   color: #4A4A4A;
   font-weight: bold;
 }
