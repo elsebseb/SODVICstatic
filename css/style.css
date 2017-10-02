@@ -118,12 +118,17 @@ p{
   border-bottom: 1px solid #6b6c6e;
   width:100%;
 }
-.sodMain{
+.sodFilter a{
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+}
+.sodFilter .filterBtn{
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
 
-}
-.filterBtn{
-  height:;
-}
 .togglelbl{
   text-align: left;
   font-size: 22px;
@@ -415,7 +420,7 @@ div.sodRelatedProject{
   display: inline-block;
   width: 60px;
 }
-.newsFilterMenu a div {
+.newsFilterMenu a .filterBtn {
   padding: 0;
   height: 100%;
   width: 100%;
