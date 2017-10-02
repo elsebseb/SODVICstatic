@@ -398,10 +398,29 @@ div.sodRelatedProject{
   margin-right: 10px;
   border-radius: 25px;
 }
+/* News filter panel buttons */
 .newsFilter{
   background-color: #fff;
+  text-align: center;
+  text-align: center;
+  padding: 15px;
   padding-bottom: 25px;
+  background-color: #F7F8F9;
+  border-radius: 10px;
 }
+.newsFilter .sodBreadcrumbs{
+  padding: 20px 0;
+}
+.newsFilterMenu a {
+  display: inline-block;
+  width: 60px;
+}
+.newsFilterMenu a div {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .sodDepartment{
   height: 250px;
 }
