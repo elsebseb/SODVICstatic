@@ -40,7 +40,7 @@ p{
   background-color: #F6F4F4;
   /*FIXME: Setting height is layout breaking
    - leave as auto to conform to content*/
-  /*height:100%;*/
+  height:100%;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -113,18 +113,23 @@ p{
 /* filter starts*/
 .sodFilter{
   border-bottom: 1px solid #6b6c6e;
-  width:100%;
 }
 .sodFilter a{
+
+}
+/*.sodFilter a{
   display: inline-block;
-  width: 80px;
   text-align: center;
 }
-.sodFilter .filterBtn{
-  padding: 0;
-  height: 100%;
-  width: 100%;
+.sodFilter img{
+  min-width: 80px;
+  max-width: 130px;
 }
+.sodFilter .filterBtn{
+  height: 100%;
+  width:100%;
+  padding: 0;
+}*/
 
 /*FIXME: this class should be renamed sodFilterBreadcrumbs
 to distringuish between page breadcrumbs*/
@@ -448,7 +453,22 @@ div.sodRelatedProject{
   display: inline-block;
   margin-top: 25px;
   margin-right: 45px;
-
+}
+.eventsMonth{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left:20px;padding-right:20px;
+  border-bottom: 1px dashed black;
+}
+.events{
+}
+.eventsDate{
+  display: inline-block;
+  width: 100px;
+}
+.eventsTxt{
+  display: inline-block;
+  width: auto;
 }
 
 /* MEDIA QUERIES */
@@ -475,7 +495,16 @@ div.sodRelatedProject{
     height:300px;
     margin-top: 10px;
     margin-right:10px;
-
+   }
+   .sodFilter a{
+     display: inline-block;
+     text-align: center;
+     width: 80px;
+   }
+   .sodFilter .filterBtn{
+     height: 100%;
+     width:100%;
+     padding: 0;
    }
 }
 
@@ -488,6 +517,19 @@ div.sodRelatedProject{
   .sodRight{
     width: 60%;
     float: left;
+  }
+  .sodFilter a{
+    width: 80px;
+  }
+  .sodFilter a{
+    display: inline-block;
+    text-align: center;
+    width: 80px;
+  }
+  .sodFilter .filterBtn{
+    height: 100%;
+    width:100%;
+    padding: 0;
   }
 }
 
@@ -513,7 +555,16 @@ div.sodRelatedProject{
     height:300px;
     margin-top: 10px;
     margin-right:10px;
-
+   }
+   .sodFilter a{
+     display: inline-block;
+     text-align: center;
+     width: 80px;
+   }
+   .sodFilter .filterBtn{
+     height: 100%;
+     width:100%;
+     padding: 0;
    }
 }
 
@@ -528,6 +579,16 @@ div.sodRelatedProject{
     width: 65%;
     float: left;
   }
+  .sodFilter a{
+    text-align: center;
+  }
+  .sodFilter .filterBtn{
+    width: 16.66%;
+  }
+  .sodFilter img{
+    min-width: 90px;
+    padding-right: 5px;
+  }
 }
 
 /* Large only */
@@ -540,6 +601,17 @@ div.sodRelatedProject{
     width: 65%;
     float: left;
   }
+  .sodFilter a{
+    text-align: center;
+    display:inline;
+  }
+  .sodFilter .filterBtn{
+    width: 16.66%;
+  }
+  .sodFilter img{
+    min-width: 90px;
+    padding-right: 5px;
+  }
 }
 /* extra Large and up */
 @media screen and (min-width: 75em) {
@@ -550,6 +622,17 @@ div.sodRelatedProject{
   .sodRight{
     width: 60%;
     float: left;
+  }
+  .sodFilter a{
+    text-align: center;
+    display:inline;
+  }
+  .sodFilter .filterBtn{
+    width: 16.66%;
+  }
+  .sodFilter img{
+    min-width: 100px;
+    padding-right: 15px;
   }
 }
 
@@ -563,6 +646,17 @@ div.sodRelatedProject{
     width: 65%;
     float: left;
   }
+  .sodFilter a{
+    text-align: center;
+    display:inline;
+  }
+  .sodFilter .filterBtn{
+    width: 16.66%;
+  }
+  .sodFilter img{
+    min-width: 100px;
+    padding-right: 15px;
+  }
 }
 /* extra extra Large and up */
 @media screen and (min-width: 82em) {
@@ -573,6 +667,17 @@ div.sodRelatedProject{
   .sodRight{
     width: 75%;
     float: left;
+  }
+  .sodFilter a{
+    text-align: center;
+    display:inline;
+  }
+  .sodFilter .filterBtn{
+    width: 16.66%;
+  }
+  .sodFilter img{
+    min-width: 100px;
+    padding-right: 25px;
   }
 }
 
@@ -586,6 +691,17 @@ div.sodRelatedProject{
     width: 75%;
     float: left;
   }
+  .sodFilter a{
+    text-align: center;
+    display:inline;
+  }
+  .sodFilter .filterBtn{
+    width: 16.66%;
+  }
+  .sodFilter img{
+    min-width: 100px;
+    padding-right: 25px;
+  }
 }
 /* extra extra Large and up */
 @media screen and (min-width: 93em) {
@@ -596,6 +712,17 @@ div.sodRelatedProject{
   .sodRight{
     width: 80%;
     float: left;
+  }
+  .sodFilter a{
+    text-align: center;
+    display:inline;
+  }
+  .sodFilter .filterBtn{
+    width: 16.66%;
+  }
+  .sodFilter img{
+    min-width: 100px;
+    padding-right: 35px;
   }
 }
 
@@ -608,5 +735,16 @@ div.sodRelatedProject{
   .sodRight{
     width: 80%;
     float: left;
+  }
+  .sodFilter a{
+    text-align: center;
+    display:inline;
+  }
+  .sodFilter .filterBtn{
+    width: 16.66%;
+  }
+  .sodFilter img{
+    min-width: 100px;
+    padding-right: 35px;
   }
 }

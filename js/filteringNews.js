@@ -219,7 +219,7 @@ $(document).ready(function() {
     if(v1==0 && v2==1 && v3==1 && v4==1 && v5==1){
           $('.grid').isotope({ filter: '.media, .ind, .cc, .pg' });
           $( "#breadcrumbs" ).empty();
-          $( "#breadcrumbs" ).append( "<span class='mediaTxt'>First Year Design</span>, <span class='indTxt'>Industrial Design</span>, <span class='ccTxt'>Culture and Context</span> and <span class='pgTxt'>Post Graduate</span>" );
+          $( "#breadcrumbs" ).append( "<span class='mediaTxt'>Media Design</span>, <span class='indTxt'>Industrial Design</span>, <span class='ccTxt'>Culture and Context</span> and <span class='pgTxt'>Post Graduate</span>" );
     }
     if(v1==1 && v2==1 && v3==1 && v4==1 && v5==1){
           $('.grid').isotope({ filter: '*' });
