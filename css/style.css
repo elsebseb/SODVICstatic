@@ -40,7 +40,7 @@ p{
   background-color: #F6F4F4;
   /*FIXME: Setting height is layout breaking
    - leave as auto to conform to content*/
-  height:100%;
+  /*height:100%;*/
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -114,22 +114,7 @@ p{
 .sodFilter{
   border-bottom: 1px solid #6b6c6e;
 }
-.sodFilter a{
 
-}
-/*.sodFilter a{
-  display: inline-block;
-  text-align: center;
-}
-.sodFilter img{
-  min-width: 80px;
-  max-width: 130px;
-}
-.sodFilter .filterBtn{
-  height: 100%;
-  width:100%;
-  padding: 0;
-}*/
 
 /*FIXME: this class should be renamed sodFilterBreadcrumbs
 to distringuish between page breadcrumbs*/
@@ -389,8 +374,7 @@ div.sodRelatedProject{
 
 /* News SECTION */
 .sodNewsArticle{
-  margin-left: 25px;
-  margin-right: 25px;
+
   border: 1px solid #fff;
   border-radius: 25px;
   margin-bottom: 25px;
@@ -398,6 +382,12 @@ div.sodRelatedProject{
 .grid-item-news {
   width: 95%;
   height:550px;
+  margin-right: 10px;
+  border-radius: 25px;
+}
+.grid-item-news--width2 {
+  width: 45%;
+  height:350px;
   margin-right: 10px;
   border-radius: 25px;
 }
@@ -427,6 +417,7 @@ div.sodRelatedProject{
 .sodDepartment{
   height: 250px;
 }
+
 .sodNewsInfo{
   min-height:300px;
   background-color: #dedede;
@@ -454,7 +445,7 @@ div.sodRelatedProject{
   margin-top: 25px;
   margin-right: 45px;
 }
-.eventsMonth{
+.sidebarSection{
   padding-top: 20px;
   padding-bottom: 30px;
   padding-left:20px;padding-right:20px;
@@ -470,7 +461,41 @@ div.sodRelatedProject{
   display: inline-block;
   width: auto;
 }
-
+/* DEPARTMENTS */
+.courses1{
+  background-color: pink;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.courses2{
+  background-color: red;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.courses3{
+  background-color: purple;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.course{
+  min-height: 25px;
+  width: 100%;
+}
+.courseCode{
+  width:120px;
+  float:left;
+  text-align: left;
+  padding-left: 20px;
+  color: #fff;
+  font-size: 14px;
+}
+.courseTitle{
+  min-width:200px;
+  float:left;
+  text-align: left;
+  color: #fff;
+  font-size: 14px;
+}
 /* MEDIA QUERIES */
 /* Small only */
 @media screen and (max-width: 39.9375em) {
