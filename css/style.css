@@ -461,18 +461,22 @@ div.sodRelatedProject{
   width: auto;
 }
 /* DEPARTMENTS */
+.departmentLogo{
+  height: 80px;
+  padding-right: 10px;
+}
 .courses1{
-  background-color: pink;
+  background-color: #ffa1a1;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 .courses2{
-  background-color: red;
+  background-color: #ff697b;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 .courses3{
-  background-color: purple;
+  background-color: #d91c5c;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -615,6 +619,9 @@ div.sodRelatedProject{
   .sodFilter img{
     min-width: 90px;
     padding-right: 5px;
+  }
+  .departmentFirstArticle{
+    width: 92%;
   }
 }
 
