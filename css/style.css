@@ -506,10 +506,20 @@ div.sodRelatedProject{
   .sodLeft{
     width:100%;
     float left;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .sodRight{
     width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
     float: left;
+  }
+  .sodSidebar{
+    padding-left: 10px;
+  }
+  .sidebarSection{
+    padding-left:5px;padding-right:5px;
   }
   /* masonry */
   .grid-item {
